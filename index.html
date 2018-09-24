@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">-->
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="row ">
+                <br>
+                <h4 class="card-panel teal lighten-2">Chuck Norris Joke Generator</h4>
+                <br>
+
+                <div class="col s12 m6 ">
+                    <div class="card-panel z-depth-3">
+
+                        <form>
+                            <div>
+                                <label for="number">Number of Jokes</label>
+                                <input type="number" id="number">
+                            </div>
+                            <div>
+                                <label for="fn">Firstname</label>
+                                <input type="text" id="fn">
+                            </div>
+                            <div>
+                                <label for="ln">Lastname</label>
+                                <input type="text" id="ln">
+                            </div>
+                            <div>
+                                <button id="btn1" class="btn">Get Jokes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card-panel z-depth-3" id="ca">
+                        <ul class="jokes collection " id="jokes">
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+
+</html>
