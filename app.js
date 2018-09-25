@@ -41,14 +41,16 @@ class UI {
         jokes.forEach(function(element) {
           const row = document.createElement("tr");
           row.innerHTML = `
-              <li><b> Joke: </b>${element.id} ${element.joke}</li>
+              <li><b> Joke: </b>${element.joke}</li>
               <br>
                         `;
           lista.appendChild(row);
         });
       }
     };
+    document.getElementById("chuckImg").style.display = "none";
     document.getElementById("ca").style.display = "block";
+
     xhr.send();
   }
 }
